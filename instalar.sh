@@ -20,7 +20,7 @@ UNA='uname -v'
 
 #Verifica se existe os arquivos, caso não exista copia para as pastas corretas
 VERINST () {
-	if [[ -e ${PF1} && ${PF2} ]]; then #Veficica se existe os arquivos de firmware
+	if [[ -e ${PF1} && ${PF2} ]]; then #Verifica se existe arquivos de firmware
 		clear; echo -e "\n${CIAN}[ ] Arquivos estão nas pasta, não foi necessário modificar\n" ${NORM}
 		
 	elif [[ ! -e ${PF1} && ${PF2} ]]; then #Segue instalação
