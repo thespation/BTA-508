@@ -35,7 +35,7 @@ VERINST () {
 		echo -e "\n${VERM}[!] Não foi possível copiar os arquivos\n" ${NORM} #Notifica em caso de falha
 	fi	
 }
-#Verifica se o kernl é compatível com o firmware
+#Verifica se o kernel é compatível com o firmware
 VERIKER () {
 	if [[ ${UNA} != "5.7* " ]]; then
 	VERINST
