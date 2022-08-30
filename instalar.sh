@@ -13,7 +13,6 @@ SUDC='sudo cp -iv' 							#Comando para cópia de arquivo
 PTMP='20201202_LINUX_BT_DRIVER/rtkbt-firmware/lib/firmware/rtlbt/'	#Pasta temporária
 PF1='/lib/firmware/rtl_bt/rtl8761b_fw.bin'				#Pasta e arquivo de firmware
 PF2='/lib/firmware/rtl_bt/rtl8761b_config.bin'				#Pasta e arquivo de firmware
-PF='/lib/firmware/rtl_bt/'						#Pasta de firmware
 ARQ1='rtl8761b_fw'							#Arquivo de firmware 	1
 ARQ2='rtl8761b_config'							#Arquivo de firmware 	2
 #Alias verificação de kernel
@@ -31,7 +30,7 @@ VERINST () {
 		7z x 20201202_mpow_BH456A_driver+for+Linux.7z &&
 		echo -e "\n${VERD}[*] Arquivo descompactado" ${NORM} &&
 		echo -e "\n${CIAN}[ ] Copiando arquivos para as pastas" ${NORM} &&
-		${SUDC} ${PTMP}${ARQ1} ${PF}; ${SUDC} ${PTMP}${ARQ2} ${PF}
+		${SUDC} ${PTMP}${ARQ1} ${PF1}; ${SUDC} ${PTMP}${ARQ2} ${PF2}
 		echo -e "\n${VERD}[*] Arquivos enviados às pastas, reinicie a máquina para que funcione corretamente" ${NORM}
 	else
 		echo -e "\n${VERM}[!] Não foi possível copiar os arquivos\n" ${NORM} #Notifica em caso de falha
