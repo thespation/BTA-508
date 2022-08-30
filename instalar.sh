@@ -9,12 +9,12 @@ VERD="\033[0;32m"	#Deixa a saída na cor verde
 CIAN="\033[0;36m"	#Deixa a saída na cor ciano
 NORM="\033[0m"		#Volta para a cor padrão
 # Alias firmware
-SUDC='sudo cp -iv' 							#Comando para cópia de arquivo
-PTMP='20201202_LINUX_BT_DRIVER/rtkbt-firmware/lib/firmware/rtlbt/'	#Pasta temporária
-PF1='/lib/firmware/rtl_bt/rtl8761b_fw.bin'				#Pasta e arquivo de firmware
-PF2='/lib/firmware/rtl_bt/rtl8761b_config.bin'				#Pasta e arquivo de firmware
-ARQ1='rtl8761b_fw'							#Arquivo de firmware 	1
-ARQ2='rtl8761b_config'							#Arquivo de firmware 	2
+SUDC='sudo cp -iv' 									#Comando para cópia de arquivo
+PTMP='/tmp/BTA-508/20201202_LINUX_BT_DRIVER/rtkbt-firmware/lib/firmware/rtlbt/'		#Pasta temporária
+PF1='/lib/firmware/rtl_bt/rtl8761b_fw.bin'						#Pasta e arquivo de firmware
+PF2='/lib/firmware/rtl_bt/rtl8761b_config.bin'						#Pasta e arquivo de firmware
+ARQ1='rtl8761b_fw'									#Arquivo de firmware 	1
+ARQ2='rtl8761b_config'									#Arquivo de firmware 	2
 #Alias verificação de kernel
 UNA='uname -v'
 
@@ -23,9 +23,8 @@ VERINST () {
 	if [[ -e ${PF1} && ${PF2} ]]; then #Veficica se existe os arquivos de firmware
 		clear; echo -e "\n${CIAN}[ ] Arquivos estão nas pasta, não foi necessário modificar\n" ${NORM}
 		
-	elif [[ ! -e ${PF1} && ${PF2} ]]; then #Caso não exista, baixa e copia para a pasta correta
-		echo -e "\n${CIAN}[ ] Baixando arquivos" ${NORM} &&
-		cd /tmp && git clone https://github.com/thespation/BTA-508 && cd BTA-508/ &&
+	elif [[ ! -e ${PF1} && ${PF2} ]]; then #Segue instalação
+		cd /tmp/BTA-508 &&
 		echo -e "\n${CIAN}[ ] Descompactando arquivo" ${NORM} &&
 		7z x 20201202_mpow_BH456A_driver+for+Linux.7z &&
 		echo -e "\n${VERD}[*] Arquivo descompactado" ${NORM} &&
