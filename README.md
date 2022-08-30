@@ -1,6 +1,8 @@
-# BTA-508
+# Adaptador bluetooth Orico BTA-508
 Instalador para adaptador Bluetooth Orico BTA-508 no Linux
 
+<p align="center">
+<img width="500px" src="https://user-images.githubusercontent.com/84329097/187517061-7ec169ad-b9ff-4e82-a9ce-9e4010bf10e9.jpeg" align="center" alt="white" /><br><br>
 
 ## Instalação
 
