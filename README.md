@@ -13,5 +13,4 @@ cd /tmp && git clone https://github.com/thespation/BTA-508 && chmod 755 BTA-508/
 ```
 ## Caminho do script
 
-
-![Desenho](https://user-images.githubusercontent.com/84329097/187668537-7d6d1190-9053-4d78-b753-6ae4f2c5f072.png)
+![Desenho](https://user-images.githubusercontent.com/84329097/187670398-b6c47d50-97c2-4b6a-95ce-6aacc9f43b66.png)
