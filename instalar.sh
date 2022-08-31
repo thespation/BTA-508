@@ -23,7 +23,7 @@ UNA='uname -v'
 #Verifica se existe os arquivos, caso não exista copia para as pastas corretas
 VERINST () {
 	if [[ -f ${PF1} && ${PF2} ]]; then #Verifica se existe arquivos de firmware
-		clear; echo -e "\n${CIAN}[ ] Arquivos estão na pastA, não foi necessário modificar\n" ${NORM}
+		clear; echo -e "\n${CIAN}[ ] Arquivos estão na pasta, não foi necessário modificar\n" ${NORM}
 	elif [[ ! -f ${PF1} && ${PF2} ]]; then #Segue instalação
 		cd /tmp/BTA-508 && VERICOMP
 	else
