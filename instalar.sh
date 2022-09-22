@@ -9,13 +9,13 @@ VERD="\033[0;32m"	#Deixa a saída na cor verde
 CIAN="\033[0;36m"	#Deixa a saída na cor ciano
 NORM="\033[0m"		#Volta para a cor padrão
 # Alias firmware
-SUDC="sudo curl -s" 							#Comando para cópia de arquivo
-PTMP="https://raw.githubusercontent.com/thespation/BTA-508/firmware/"	#Pasta dos arquivos de firmware
-PF1="/lib/firmware/rtl_bt/rtl8761b_fw.bin"				#Pasta e arquivo de firmware
-PF2="/lib/firmware/rtl_bt/rtl8761b_config.bin"				#Pasta e arquivo de firmware
-PF="/lib/firmware/rtl_bt/"						#Pasta de firmware
-ARQ1="rtl8761b_fw"							#Arquivo de firmware 	1
-ARQ2="rtl8761b_config"							#Arquivo de firmware 	2
+SUDC="sudo curl -s" 								#Comando para cópia de arquivo
+PTMP="https://raw.githubusercontent.com/thespation/BTA-508/main/firmware/"	#Pasta dos arquivos de firmware
+PF1="/lib/firmware/rtl_bt/rtl8761b_fw.bin"					#Pasta e arquivo de firmware
+PF2="/lib/firmware/rtl_bt/rtl8761b_config.bin"					#Pasta e arquivo de firmware
+PF="/lib/firmware/rtl_bt/"							#Pasta de firmware
+ARQ1="rtl8761b_fw"								#Arquivo de firmware 	1
+ARQ2="rtl8761b_config"								#Arquivo de firmware 	2
 #Alias verificação de kernel
 UNA='uname -v'
 
